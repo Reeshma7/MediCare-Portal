@@ -1,0 +1,108 @@
+.refund-page {
+  padding: 20px;
+  background: #f4f7fc;
+  min-height: 100vh;
+}
+
+.refund-page h2 {
+  margin-bottom: 20px;
+  color: #1f2d3d;
+}
+
+.refund-table-wrapper {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-x: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f0f4ff;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.approved {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.status.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status.refunded {
+  background: #d4edda;
+  color: #155724;
+}
+
+.btn {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.btn.approve {
+  background: #28a745;
+  color: white;
+}
+
+.btn.reject {
+  background: #dc3545;
+  color: white;
+}
+
+.btn.refund {
+  background: #007bff;
+  color: white;
+  margin-top: 5px;
+}
+
+.refund-box input {
+  padding: 6px;
+  width: 180px;
+  margin-right: 5px;
+}
+
+.done {
+  color: green;
+  font-weight: bold;
+}
+
+.rejected {
+  color: red;
+  font-weight: bold;
+}
+
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}

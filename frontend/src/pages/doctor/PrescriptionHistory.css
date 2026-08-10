@@ -1,0 +1,510 @@
+/* ===========================
+   PAGE
+=========================== */
+
+.history-page {
+  padding: 30px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.history-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+
+.history-card h2 {
+  margin-bottom: 25px;
+  color: #2563eb;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.history-filter {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.history-filter input {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.history-filter input[type="text"] {
+  flex: 1;
+  min-width: 250px;
+}
+
+.history-filter input:focus {
+  border-color: #2563eb;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.history-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-card thead {
+  background: #2563eb;
+  color: white;
+}
+
+.history-card th,
+.history-card td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.history-card tbody tr:hover {
+  background: #f8f9ff;
+}
+
+/* ===========================
+   VIEW BUTTON
+=========================== */
+
+.view-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.view-btn:hover {
+  background: #1749b4;
+}
+
+/* ===========================
+   MODAL
+=========================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+
+.modal {
+
+  width: 900px;
+  max-width: 95%;
+
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background: white;
+
+  border-radius: 12px;
+
+  animation: popup .3s ease;
+
+}
+
+@keyframes popup {
+
+from{
+
+transform:scale(.8);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.modal-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px;
+
+border-bottom:1px solid #eee;
+
+}
+
+.modal-header h2{
+
+color:#2563eb;
+
+}
+
+.close-btn{
+
+background:red;
+
+color:white;
+
+border:none;
+
+padding:8px 14px;
+
+cursor:pointer;
+
+border-radius:6px;
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+.modal-body{
+
+padding:20px;
+
+}
+
+.modal-body h3{
+
+margin-top:20px;
+
+margin-bottom:10px;
+
+color:#2563eb;
+
+}
+
+.modal-body p{
+
+margin-bottom:10px;
+
+line-height:1.7;
+
+}
+
+.modal-body hr{
+
+margin:20px 0;
+
+border:none;
+
+border-top:1px solid #ddd;
+
+}
+
+/* ===========================
+   MEDICINE TABLE
+=========================== */
+
+.medicine-table{
+
+width:100%;
+
+margin-top:15px;
+
+border-collapse:collapse;
+
+}
+
+.medicine-table th{
+
+background:#2563eb;
+
+color:white;
+
+padding:12px;
+
+}
+
+.medicine-table td{
+
+padding:12px;
+
+border:1px solid #ddd;
+
+text-align:center;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.modal-footer{
+
+display:flex;
+
+justify-content:flex-end;
+
+gap:12px;
+
+padding:20px;
+
+border-top:1px solid #eee;
+
+flex-wrap:wrap;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.print-btn{
+
+background:#10b981;
+
+color:white;
+
+border:none;
+
+padding:10px 18px;
+
+cursor:pointer;
+
+border-radius:6px;
+
+}
+
+.print-btn:hover{
+
+background:#059669;
+
+}
+
+.pdf-btn{
+
+background:#ef4444;
+
+color:white;
+
+border:none;
+
+padding:10px 18px;
+
+cursor:pointer;
+
+border-radius:6px;
+
+}
+
+.pdf-btn:hover{
+
+background:#dc2626;
+
+}
+
+.close-modal-btn{
+
+background:#6b7280;
+
+color:white;
+
+border:none;
+
+padding:10px 18px;
+
+cursor:pointer;
+
+border-radius:6px;
+
+}
+
+.close-modal-btn:hover{
+
+background:#4b5563;
+
+}
+/* Header */
+
+.history-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:25px;
+}
+
+.back-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+}
+
+.history-header h2{
+    flex:1;
+    text-align:center;
+    color:#1e3a8a;
+    margin:0;
+}
+
+@media(max-width:768px){
+
+    .history-header{
+        flex-direction:column;
+        gap:15px;
+        align-items:flex-start;
+    }
+
+    .history-header h2{
+        width:100%;
+        text-align:center;
+    }
+
+    .back-btn{
+        width:100%;
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.history-card{
+
+overflow-x:auto;
+
+}
+
+.history-card table{
+
+min-width:900px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.history-page{
+
+padding:15px;
+
+}
+
+.history-card{
+
+padding:15px;
+
+}
+
+.history-card h2{
+
+font-size:22px;
+
+}
+
+.modal{
+
+width:96%;
+
+}
+
+.modal-footer{
+
+flex-direction:column;
+
+}
+
+.modal-footer button{
+
+width:100%;
+
+}
+
+}
+
+/* ===========================
+   PRINT
+=========================== */
+
+@media print{
+
+body *{
+
+visibility:hidden;
+
+}
+
+.modal,
+.modal *{
+
+visibility:visible;
+
+}
+
+.modal{
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+box-shadow:none;
+
+}
+
+.modal-footer{
+
+display:none;
+
+}
+
+.close-btn{
+
+display:none;
+
+}
+
+}

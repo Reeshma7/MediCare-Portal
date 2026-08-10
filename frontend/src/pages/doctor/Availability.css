@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+.availability-page {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+}
+
+.availability-card {
+  width: 100%;
+  max-width: 750px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+.availability-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e293b;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.availability-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.availability-card label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.availability-card input,
+.availability-card select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: .3s;
+  background: #fafafa;
+}
+
+.availability-card input:focus,
+.availability-card select:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(37,99,235,.12);
+}
+
+/* Time Fields */
+
+.time-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Days */
+
+.days-title {
+  margin-bottom: 10px;
+}
+
+.days-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.days-box label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.days-box label:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.days-box input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #2563eb;
+}
+
+/* Button */
+
+.availability-card button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.availability-card button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.availability-card button:active {
+  transform: scale(.98);
+}
+
+/* ===================== */
+/* Tablet */
+/* ===================== */
+
+@media (max-width: 992px) {
+
+  .availability-page {
+    padding: 20px;
+  }
+
+  .availability-card {
+    padding: 30px;
+  }
+
+  .days-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ===================== */
+/* Mobile */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  .availability-page {
+    padding: 15px;
+  }
+
+  .availability-card {
+    padding: 25px 20px;
+    border-radius: 16px;
+  }
+
+  .availability-card h2 {
+    font-size: 24px;
+  }
+
+  .time-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .days-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ===================== */
+/* Small Mobile */
+/* ===================== */
+
+@media (max-width: 480px) {
+
+  .availability-page {
+    padding: 10px;
+  }
+
+  .availability-card {
+    padding: 18px;
+  }
+
+  .availability-card h2 {
+    font-size: 22px;
+  }
+
+  .availability-card label {
+    font-size: 14px;
+  }
+
+  .availability-card input,
+  .availability-card select {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .days-box {
+    grid-template-columns: 1fr;
+  }
+
+  .days-box label {
+    padding: 12px;
+  }
+
+  .availability-card button {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+}

@@ -1,0 +1,259 @@
+.doctor-appointments {
+  padding: 25px;
+}
+
+.doctor-appointments h2 {
+  margin-bottom: 25px;
+  color: #1e293b;
+  font-size: 28px;
+}
+
+.table-wrapper {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* ================= DESKTOP TABLE ================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+table th {
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+}
+
+table td {
+  color: #334155;
+  vertical-align: middle;
+}
+
+/* ================= STATUS ================= */
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status.confirmed {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.status.completed {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status.cancelled {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ================= BUTTONS ================= */
+
+.confirm-btn,
+.reject-btn,
+.complete-btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 3px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.confirm-btn {
+  background: #22c55e;
+}
+
+.confirm-btn:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+
+.reject-btn {
+  background: #ef4444;
+}
+
+.reject-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.complete-btn {
+  background: #2563eb;
+}
+
+.complete-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* ================= COMPLETED & CANCELLED TEXT ================= */
+
+.completed {
+  color: #16a34a;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cancelled {
+  color: #dc2626;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ================= LAPTOP ================= */
+
+@media (max-width: 1200px) {
+
+  table th,
+  table td {
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+  .doctor-appointments {
+    padding: 20px;
+  }
+
+  .doctor-appointments h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  table th,
+  table td {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+
+  .confirm-btn,
+  .reject-btn,
+  .complete-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .doctor-appointments {
+    padding: 15px;
+  }
+
+  .table-wrapper {
+    background: none;
+    box-shadow: none;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    text-align: right;
+    font-size: 14px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #1e293b;
+    text-align: left;
+  }
+
+  .confirm-btn,
+  .reject-btn,
+  .complete-btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .completed,
+  .cancelled {
+    width: 100%;
+    text-align: right;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  .doctor-appointments h2 {
+    font-size: 20px;
+  }
+
+  tr {
+    padding: 12px;
+  }
+
+  td {
+    font-size: 13px;
+  }
+
+  .confirm-btn,
+  .reject-btn,
+  .complete-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+}

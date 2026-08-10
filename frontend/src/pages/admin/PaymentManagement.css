@@ -1,0 +1,242 @@
+/* ================= PAGE ================= */
+
+.payment-management{
+  width:100%;
+  padding:25px;
+}
+
+.payment-header{
+  margin-bottom:25px;
+}
+
+.payment-header h2{
+  font-size:30px;
+  color:#0f172a;
+  font-weight:700;
+}
+
+/* ================= TABLE ================= */
+
+.payment-table{
+  width:100%;
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.payment-table table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.payment-table th{
+  background:#2563eb;
+  color:white;
+  padding:16px;
+  text-align:left;
+  font-size:15px;
+  font-weight:600;
+}
+
+.payment-table td{
+  padding:16px;
+  border-bottom:1px solid #e2e8f0;
+  color:#475569;
+  font-size:14px;
+}
+
+.payment-table tbody tr:hover{
+  background:#f8fafc;
+}
+
+/* ================= STATUS ================= */
+
+.status{
+  display:inline-block;
+  padding:6px 14px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.status.pending{
+  background:#fef3c7;
+  color:#b45309;
+}
+
+.status.submitted{
+  background:#dbeafe;
+  color:#2563eb;
+}
+
+.status.verified{
+  background:#dcfce7;
+  color:#15803d;
+}
+
+/* ================= VERIFY BUTTON ================= */
+
+.verify-btn{
+  border:none;
+  background:#22c55e;
+  color:white;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.3s;
+}
+
+.verify-btn:hover{
+  background:#16a34a;
+}
+
+.verified{
+  color:#16a34a;
+  font-weight:600;
+}
+
+.pending{
+  color:#f59e0b;
+  font-weight:600;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+  .payment-management{
+    padding:20px;
+  }
+
+  .payment-table{
+    overflow-x:auto;
+  }
+
+  .payment-table table{
+    min-width:900px;
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+  .payment-management{
+    padding:15px;
+  }
+
+  .payment-header h2{
+    text-align:center;
+    font-size:24px;
+  }
+
+  .payment-table{
+    box-shadow:none;
+    background:transparent;
+  }
+
+  .payment-table table,
+  .payment-table thead,
+  .payment-table tbody,
+  .payment-table th,
+  .payment-table td,
+  .payment-table tr{
+    display:block;
+    width:100%;
+  }
+
+  .payment-table thead{
+    display:none;
+  }
+
+  .payment-table tr{
+    background:white;
+    margin-bottom:18px;
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+  }
+
+  .payment-table td{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border:none;
+    font-size:14px;
+    gap:15px;
+  }
+
+  .payment-table td::before{
+    font-weight:600;
+    color:#0f172a;
+  }
+
+  .payment-table td:nth-child(1)::before{
+    content:"Patient";
+  }
+
+  .payment-table td:nth-child(2)::before{
+    content:"Doctor";
+  }
+
+  .payment-table td:nth-child(3)::before{
+    content:"Date";
+  }
+
+  .payment-table td:nth-child(4)::before{
+    content:"Time";
+  }
+
+  .payment-table td:nth-child(5)::before{
+    content:"Amount";
+  }
+
+  .payment-table td:nth-child(6)::before{
+    content:"Transaction";
+  }
+
+  .payment-table td:nth-child(7)::before{
+    content:"Status";
+  }
+
+  .payment-table td:nth-child(8)::before{
+    content:"Action";
+  }
+
+  .verify-btn{
+    width:100%;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+  .payment-management{
+    padding:10px;
+  }
+
+  .payment-header h2{
+    font-size:22px;
+  }
+
+  .payment-table td{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+  }
+
+  .payment-table td::before{
+    margin-bottom:4px;
+  }
+
+  .verify-btn{
+    width:100%;
+  }
+
+}

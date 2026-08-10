@@ -1,0 +1,26 @@
+.claim-history{
+    padding:25px;
+}
+
+.claim-history h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+th{
+    background:#2563eb;
+    color:#fff;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+}
