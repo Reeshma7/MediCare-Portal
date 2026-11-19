@@ -43,7 +43,7 @@ function Refunds() {
         }
       );
 
-      alert(`Refund ${action}ed successfully`);
+      alert(`Refund ${action}d successfully`);
       fetchRefunds();
     } catch (error) {
       alert(error.response?.data?.message || "Error");
